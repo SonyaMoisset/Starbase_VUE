@@ -1,13 +1,13 @@
 <template>
   <div div="app">
       <h3>{{title}}</h3>
-      <button 
-        class="btn btn-primary"
-        @click="fetchCharacter">Test Fetch Character</button>
+      <Character />
   </div>
 </template>
 
 <script>
+    import Character from './components/Character.vue'
+
     export default {
         name: 'app',
         data() {
@@ -15,14 +15,8 @@
                 title: 'Generate Your Team'
             }
         },
-        methods: {
-            fetchCharacter() {
-                fetch('http://swapi.co/api/people', {
-                    method: 'GET'
-                })
-                .then(response => response.json())
-                .then(json => console.log(json))
-            }
+        components: {
+            Character
         }
     }
 </script>
