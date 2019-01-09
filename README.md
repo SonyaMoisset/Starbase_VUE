@@ -1,5 +1,7 @@
 # starbase
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SonyaMoisset/Starbase_VUE.svg)](https://greenkeeper.io/)
+
 > A Vue.js project
 
 ## Build Setup
